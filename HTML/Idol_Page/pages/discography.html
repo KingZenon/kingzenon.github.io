@@ -86,24 +86,34 @@
     <section id="comment">
         <div align="center">
             <h3>Leave a Comment</h3>
-            <table cellspacing="0" cellpadding="10">
-                <tbody>
+            <form>
+                <table cellspacing="0" cellpadding="10">
                     <tr>
-                        <td>Name:</td>
-                        <td><input type="text" name="name" id="name"></td>
+                        <td><label for="name">Name:</label></td>
+                        <td><input type="text" id="name" name="name"></td>
                     </tr>
+
                     <tr>
-                        <td>Email:</td>
-                        <td><input type="email" name="email" id="email"></td>
+                        <td><label for="email">Email:</label></td>
+                        <td><input type="email" id="email" name="email"></td>
                     </tr>
+
                     <tr>
-                        <td>Comment:</td>
-                        <td><textarea name="user_comment" id="comment" rows="7" cols="25"></textarea></td>
+                        <td><label for="comment">Comment:</label></td>
+                        <td>
+                            <textarea id="comment" name="comment" rows="10" cols="40"></textarea>
+                        </td>
                     </tr>
-                    
-                </tbody>
-            </table>
-            <button type="submit" align="center">Add</button>
+
+                    <tr>
+                        <td></td>
+                        <td>
+                            <button type="submit">Add</button>
+                        </td>
+                    </tr>
+                </table>
+            </form>
+            
         </div>
     </section>
     <hr>
