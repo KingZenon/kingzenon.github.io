@@ -16,6 +16,52 @@
         <label for="password">Password</label>
         <input type="password" name="stu_password" id="password">
         <br><br>
+        <label for="phone">Phone</label>
+        <input type="number" name="stu_phone" if="phone">
+        <br><br>
+        <label for="dob">Date of Birth</label>
+        <input type="date" name="stu_dob" id="dob">
+        <br><br>
+        <label for="passport">Passport</label>
+        <input type="file" accept=".png,.jpeg,.jpg" name="stu_passport" id="passport">
+        <br><br>
+        <label for="year">Year</label>
+        <select name="stu_year" id="year">
+            <option value="">Choose your year</option>
+            <option value="1">First Year</option>
+            <option value="2">Second Year</option>
+            <option value="3">Third Year</option>
+            <option value="4">Fourth Year</option>
+        </select>
+        <br><br>
+        <label for="">Gender</label>
+        <br><br>
+        <input type="radio" name="gender" id="male" value="male"><label for="male">Male</label>
+        <input type="radio" name="gender" id="female" value="female"><label for="female">Female</label>
+        <br><br>
+        <label for="hobby">Hobbies</label>
+        <br><br>
+        <input type="checkbox" name="reading" id="reading" value="reading"><label for="reading">Reading</label>
+        <input type="checkbox" name="gaming" id="gaming" value="gaming"><label for="gaming">Gaming</label>
+        <input type="checkbox" name="travelling" id="travelling" value="travelling"><label for="travelling">Travelling</label>
+        <br><br>
+        <label for="address">Address</label>
+        <!-- row and col are optional -->
+        <textarea name="stu_address" id="address" rows="10" cols="25"></textarea>
+        <input type="time" name="" id="">
+        <br><br>
+        <input type="color" name="" id="">  
+        <br><br>
+        <input type="range" min="0" max="100" name="" id="">
+        <br><br>
+        <input type="text" name="" id="" required>
+        <br><br>
+        <input type="text" name="city1" id="" value="Yangon">
+        <br><br>
+        <input type="text" name="city2" id="" value="Mandalay" readonly>
+        <br><br>
+        <input type="text" name="phone1" id="" placeholder="eg. 09______"> 
+        <br><br>
         <!--In button submit must have to carry -->
         <button type="submit">Save</button>
     </form>
