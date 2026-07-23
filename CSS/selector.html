@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* Universal Selector */
+        * {
+            margin: 0;
+            padding: 0;
+            color: red;
+        }
+        /* Element Selector */
+        h1 {
+            background-color: black;
+        }
+
+        p {
+            background-color: aqua;
+        }
+
+        /* ID Selector */
+        #nose {
+            background-color: pink;
+            font-size: 30px;
+        }
+
+        /* CLASS Selector */
+        .eye-makeup {
+            color: brown;
+            background-color: white;
+        }
+
+        /* Attribute Selector */
+        a[title="Google Website"] {
+            font-size: 30px;
+            text-decoration: none;
+        }
+
+        input[type="email"] {
+            background-color: brown;
+        }
+
+        /* Descendent Selector */
+        div p {
+            background-color: yellow;
+        }
+
+        /* Child Selector */
+        div > p {
+            color: black;
+        }
+    </style>
+</head>
+<body>
+    <h1>Selector</h1>
+    <p>Universal Selector</p>
+    <h1>Element Selector</h1>
+    <p>Hello Css</p>
+
+    <p id="nose">Nose</p>
+    <p class="eye-makeup">Left eye</p>
+    <p class="eye-makeup">Right eye</p>
+
+    <a href="" title="Google Website">Google</a><br>
+    <a href="" title="Youtube Website">Youtube</a><br>
+
+    <input type="email" name="" id=""><br>
+    <input type="text" name="" id="">
+
+    <div class="container">
+        <p>This is paragraph 1</p>
+        <p>This is paragraph 2</p>
+        <p>This is paragraph 3</p>
+        <p>This is paragraph 4</p>
+        <span>
+            <p>This is paragraph 5</p>
+        </span>
+
+    </div>
+    
+</body>
+</html>

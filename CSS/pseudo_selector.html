@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* Hover Selector */
+        h1 a {
+            color: aqua;
+        }
+
+        h1 a:hover {
+            font-size: 50px;
+            text-decoration: none;
+            color: yellow;
+        }
+
+        h1:hover {
+            color: aquamarine;
+            cursor: pointer;
+        }
+
+        h2 a:link{
+            color: orange;
+        }
+
+        h2 a:active {
+            color: yellow;
+        }
+        /* If visited this page,turn color */
+        h2 a:visited {
+            color: green;
+        }
+        /* When put cursor,it focus on */
+        input[type="text"]:focus {
+            background-color: black;
+            color: white;
+        }
+        ul li:first-child{
+            color:yellowgreen;
+        }
+        ul li:last-child{
+            color:yellowgreen;
+        }
+    </style>
+</head>
+<body>
+    <h1>Pseudo Selector</h1>
+    <h1>
+        <a href="">Hover Selector</a>
+    </h1>
+
+    <h2>
+        <a href="https://google.com"target="_blank">Google</a>
+        <a href="https://today.com"target="_blank">Today</a>
+        <a href="https://youtube.com"target="_blank">Youtube</a>
+        <a href="https://cbsnews.com"target="_blank">CBS</a>
+    </h2>
+    <input type="text" name="" id="">
+    <ul>
+        <li>Apple</li>
+        <li>Orange</li>
+        <li>Banana</li>
+        <li>Mango</li>
+    </ul>
+</body>
+</html>
