@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* Absolute unit
+        px - border,box shadows,border radius,max
+        pt(poing), cm, mm , in (use in printing) */
+
+        button {
+            border: 5px solid red;
+            border-radius: 10px;
+            padding: 20px 50px;
+        }
+
+        /* Relative unit */
+        /* Percentage(%) */
+        .container {
+            background-color: red;
+            margin-top: 50px;
+            width: 100%
+        }
+
+        .box {
+            background-color: grey;
+            width: 50%;
+            padding: 2%;
+        }
+
+        /* em - element */
+        .em-container {
+            font-size: 20px;
+        }
+
+        .large {
+            /* 2 x 20 = 40px (base on parent value) */
+            font-size: 2em;
+        }
+
+        .normal {
+            font-size: 1em;
+            line-height: 1.5em;
+        }
+
+        /* root element */
+        html {
+            font-size: 32px;
+        }
+
+        .header {
+            /* 32 x 1 = 32px */
+            font-size: 1rem;
+        }
+
+        .title {
+            font-size: 2rem;
+        }
+
+        .desc {
+            font-size: 1rem;
+            margin-top: 3rem;
+        }
+
+        /* vw, vh,
+        1vw = 1% */
+        .vw-container {
+            background-color: lightblue;
+            width: 50vw;
+        }
+
+        .fullscreen {
+            background-color: lightcoral;
+            height: 100vh;
+        }
+
+    </style>
+</head>
+<body>
+    <button>Save</button>
+
+    <div class="container">
+        <div class="box">Box</div>
+    </div>
+
+    <!-- em -->
+    <div class="em-container">
+        <p class="large">Large Text</p>
+        <p class="normal">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Asperiores nemo inventore ab quibusdam amet dignissimos maiores ex totam, beatae natus consequuntur eius repudiandae! Ad mollitia, rerum doloribus tempore exercitationem repudiandae, quae ut officia quo veniam dicta totam provident nesciunt eligendi quod vitae earum, cupiditate at numquam placeat culpa expedita qui. Placeat temporibus maxime perferendis, illo numquam aspernatur recusandae rem doloribus beatae in aperiam itaque libero autem ea laboriosam illum qui obcaecati saepe totam omnis. Quibusdam eveniet, vitae, suscipit nobis aut quidem ullam assumenda explicabo cupiditate maiores totam. Aspernatur aperiam optio non accusantium, est officia veritatis iste harum accusamus quo quae!</p>
+    </div>
+
+     <!-- rem -->
+    <div class="header">
+        <p class="title">This is title</p>
+        <p class="desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere ratione officiis molestias quasi impedit, magni dolorum sequi est porro fugit quidem voluptatum unde laboriosam, ipsum esse, minima sunt cupiditate necessitatibus!</p>
+    </div>
+
+    <!-- vw viewport width -->
+    <div class="vw-container">
+        <p>This is view port width</p>
+    </div> 
+
+    <!-- vh viewport height -->
+    <div class="fullscreen">
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Minima officia culpa eligendi, perspiciatis, illo impedit molestiae excepturi dolor saepe maxime voluptatum? Sequi debitis vero, itaque praesentium deleniti harum minima doloribus!</p>
+    </div>
+</body>
+</html>
