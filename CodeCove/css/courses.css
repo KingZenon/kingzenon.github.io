@@ -510,3 +510,67 @@ footer {
 
     font-size: 0.8rem;
 }
+
+@media (max-width: 800px) {
+
+    .course-detail-hero {
+        flex-direction: column;
+
+        text-align: center;
+    }
+
+
+    .detail-meta {
+        justify-content: center;
+
+        flex-wrap: wrap;
+    }
+
+
+    .course-layout {
+        grid-template-columns: 1fr;
+    }
+
+
+    .lesson-box {
+        position: static;
+    }
+
+}
+
+
+@media (max-width: 550px) {
+
+    .course-detail-page {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+
+    .course-detail-hero {
+        padding: 25px;
+    }
+
+
+    .detail-logo {
+        width: 130px;
+        height: 130px;
+    }
+
+
+    .detail-logo img {
+        width: 80px;
+        height: 80px;
+    }
+
+
+    .detail-intro h1 {
+        font-size: 1.7rem;
+    }
+
+
+    .learn-grid {
+        grid-template-columns: 1fr;
+    }
+
+}
