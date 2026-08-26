@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <script>
+        //Object
+        
+        //let hello = function() {
+        //    document.write("Hello");
+        //}
+
+        let hello = () => {
+            document.write("Hello");
+        }
+        hello();
+
+        const fruits = ['Apple','Orange','Banana','Mango'];
+
+        const fruitList = fruits.map((fruit) => `<li>${fruit}</li>`);
+        console.log(fruitList);
+
+        let hotel = {
+            name: 'Easy Hotel',
+            rooms: 40,
+            booked: 23,
+            gym: true,
+            roomTypes: ['twin','double','suite'],
+            checkAvailable: function() {
+                this.rooms - this.booked ;
+            }
+        }
+        console.log(hotel);
+
+        let name = hotel.name;
+        document.write(`<h3>The hotel name is ${name}</h3>`);
+        let roomFree = hotel.checkAvailable();
+
+        hotel.pool = false;
+        console.log(hotel);
+
+        delete hotel.gym;
+        console.log(hotel);
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
