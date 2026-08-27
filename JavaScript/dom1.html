@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 id="heading">DOM <em>Selector</em></h1>
+    <h3 id="lang">Languages</h3>
+    <p class="language">HTML</p>
+    <p class="language">CSS</p>
+    <p class="language">JavaScript</p>
+    <p class="language">jQuery</p>
+    <p class="language">Bootstrap</p>
+    <p id="adding1"></p>
+    <p id="adding2"></p>
+
+    <button onclick="languages()">Click</button>
+
+    <script>
+        let heading = document.getElementById('heading');
+        console.log(heading);
+        let text = heading.innerText;
+        console.log(text);
+        let html = heading.innerHTML;
+        console.log(html);
+
+        function languages() {
+            document.getElementById('adding1').innerText = '<i>This is innerText</i>';
+            document.getElementById('adding2').innerHTML = '<i>This is innerHTML</i>';
+        
+            let classSelector = document.getElementsByClassName('language');
+            console.log(classSelector);
+            console.log(classSelector[4]);
+
+            let tagSelector = document.getElementsByTagName('p');
+            console.log(tagSelector);
+            console.log(tagSelector[5]);
+
+            let queryID = document.querySelector('#lang');
+            console.log(queryID);
+
+            let queryClass = document.querySelector('.language');
+            console.log(queryClass);
+
+            let queryClassAll = document.querySelectorAll('.language');
+            console.log(queryClassAll);
+
+            let queryTag = document.querySelector('p');
+            console.log(queryTag);
+
+            let queryTagAll = document.querySelectorAll('p');
+            console.log(queryTagAll);
+        }
+    </script>
+</html>

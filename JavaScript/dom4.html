@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 id="heading">CSS Manipulation with DOM</h1>
+    <button onclick="action()">Action</button>
+    <br><br>
+    <img src="naruto.png" alt="" id="img1">
+    <br><br>
+    <img src="gp.jpg" alt="" id="img2" width="300" height="250" onmouseover="big()" onmouseout="normal">
+
+    <script>
+        function action() {
+            let heading = document.querySelector('#heading');
+            heading.style.color = 'red';
+            heading.style.backgroundColor = 'black';
+
+            let image = document.querySelector('#img1');
+            image.style.width = '500px';
+            image.style.height = '400px';
+        }
+
+        let image = document.querySelector('#img2');
+
+        function big() {
+            image.style.width = '500px';
+            image.style.height = '400px';
+        }
+
+        function normal() {
+             image.style.width = '300px';
+            image.style.height = '250px';
+        }
+    </script>
+</body>
+</html>
