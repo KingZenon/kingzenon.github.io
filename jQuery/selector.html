@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="jquery-4.0.0.min.js"></script>
+</head>
+<body>
+    <h1>jQuery is funny!</h1>
+    <button id="click">Click</button>
+
+    <p id="p-click">This is p click</p>
+    <p id="p-select">This is p select</p>
+    <p class="tag">This is p tag</p>
+    <h2 class="tag">This is h2 tag</h2>
+    <h3 class="tag">This is h3 tag</h3>
+
+    <script>
+        // function() => call back function
+        $(document).ready(function(){
+
+            $('#click').click(function(){
+                $('p').hide(function(){
+                    alert("p is hide");
+                })
+            })
+
+            $('#p-click').click(function(){
+                $('.tag').hide();
+            })
+
+            $('#p-select').click(function(){
+                $(this).hide();
+            })
+        })
+    </script>
+</body>
+</html>

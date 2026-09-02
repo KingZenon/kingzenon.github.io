@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="jquery-4.0.0.min.js"></script>
+</head>
+<body>
+    <h3>This is <i>Lecture</i> time</h3>
+    <p id="content1"></p>
+    <p id="content2"></p>
+
+    <input type="text" name="" id="name">
+    <button id="add">Add</button>
+    <h2></h2>
+
+    <script>    
+        $(document).ready(function(){
+            let text = $('h3').text();
+            console.log(text);
+            let html = $('h3').html();
+            console.log(html);
+
+            $('#add').click(function(){
+                $('#content1').text(html);
+                $('#content2').html(html);
+
+                let name = $('#name').val();
+                console.log(name);
+                $('h2').text(name);
+            })
+        })
+    </script>
+</body>
+</html>

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="jquery-4.0.0.min.js"></script>
+</head>
+<body>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor labore blanditiis ipsum ut sapiente dignissimos qui harum eaque. Ducimus vero maiores inventore nihil sint, autem minus vitae ipsa laborum debitis saepe. Amet at magni voluptatibus impedit soluta libero enim corporis molestiae, quis repellendus nihil porro eius ipsum nostrum maxime! Nisi modi eligendi hic ipsa, animi harum ut ratione accusamus rem fugit incidunt minus, enim consectetur ad? Nulla laborum dignissimos ex harum ducimus, illum soluta quam consequatur culpa voluptatum autem ipsam veritatis nostrum at, nemo voluptatem fuga ad facilis, provident suscipit quis quasi necessitatibus vero. Maiores animi corrupti enim veritatis laudantium?</p>
+    <button id="hide">Hide</button>
+    <button id="show">Show</button>
+    <button id="toggle">Toggle</button>
+    <button id="fade-out">Fade Out</button>
+    <button id="fade-in">Fade In</button>
+    <button id="fade-toggle">Fade Toggle</button>
+    <button id="fade-to">Fade To</button>
+
+    <script>
+        $(document).ready(function(){
+
+            $('#hide').click(function(){
+                $('p').hide(3000);
+            })
+
+            $('#show').click(function(){
+                $('p').show('slow');
+            })
+
+            $('#toggle').click(function(){
+                $('p').toggle(2000);
+            })
+
+            $('#fade-out').click(function(){
+                $('p').fadeOut(2000);
+            })
+
+            $('#fade-in').click(function(){
+                $('p').fadeIn(2000);
+            })
+
+            $('#fade-toggle').click(function(){
+                $('p').fadeToggle('slow');
+            })
+
+            $('#fade-to').click(function(){
+                $('p').fadeTo(1000,0.4);
+            })
+        })
+    </script>
+</body>
+</html>
