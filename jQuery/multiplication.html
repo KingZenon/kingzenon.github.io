@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="jquery-4.0.0.min.js"></script>
+</head>
+<body>
+    Number: <input type="number" name="" id="number">
+    <button id="calculator">Calculator</button>
+
+    <table id="tbody">
+
+    </table>
+
+    <script>
+        $(document).ready(function(){
+
+            $('#calculator').click(function(){
+                let num = $('#number').val();
+                console.log(num);
+                let number = Number(num);
+                console.log(number);
+
+                let data = '';
+                for(let n = 1; n <= 12; n++) {
+                    let result = n * number;
+                    console.log(result);
+                    data += `<tr>
+                                <td> ${number} x ${n}</td>
+                                <td> = </td>
+                                <td>${result}</td>
+                             </tr>`;
+                }
+                console.log(data);
+                $('#tbody').html(data);
+            })
+        })
+    </script>
+</body>
+</html>

@@ -229,3 +229,69 @@ body {
     align-items: center;
     margin: 50px 0 70px 0;
 }
+
+/* Contact Us */
+.contact-us h1 {
+    font-size: 3rem;
+    color: #ffffff;
+    text-align: center;
+    margin: 120px 0 50px 0;
+}
+
+.contact {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    margin: 100px 70px;
+}
+
+.info {
+    display: flex;
+    padding: 20px 0;
+}
+
+.contact-icon {
+    position: relative;
+    background-color: #cda45e;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    color: #ffffff;
+    text-align: center;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 20px;
+}
+
+/* contact form */
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group input, .form-group textarea {
+    width: 100%;
+    padding: 10px;
+    background-color: #1a1814;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    color: #ffffff;
+}
+
+/* Footer */
+.footer {
+    background-color: black;
+    padding: 50px 0;
+    text-align: center;
+    color: #ffffff;
+}
+
+.footer-title {
+    font-weight: bold;
+}
+
+.dev {
+    text-decoration: none;
+    color: #cda45e;
+    font-weight: bold;
+}

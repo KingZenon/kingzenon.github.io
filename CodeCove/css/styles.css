@@ -411,19 +411,6 @@ a {
     transform: translateY(-2px);
 }
 
-/* =========================================
-                GLOBAL STYLE
-========================================= */
-
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-html {
-    scroll-behavior: smooth;
-}
 
 body {
     font-family: "Inter", Arial, sans-serif;

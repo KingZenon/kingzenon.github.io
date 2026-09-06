@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //String
+        let firstName = "Htoo Myat";
+        let lastName = "Htin Lynn";
+        console.log(typeof(firstName));
+        console.log(typeof(lastName));
+        let fullName = firstName.concat(' ', lastName);
+        console.log(fullName);
+        console.log("My name is " + fullName);
+        console.log(`My name is ${fullName}.`);
+        console.log(fullName[5]);
+        console.log(fullName.toLowerCase());
+        console.log(fullName.toUpperCase());
+
+        //substr(5,3) 5 is start index and 3 is start from the index 5
+        console.log(fullName.substr(5,3));
+
+        let ser = "JavaScript is funny";
+        let searchResult = ser.search("funny");
+        console.log(searchResult);
+
+        let replaceString = "I want to go for a walk.";
+        console.log(replaceString);
+
+        let replaceResult = replaceString.replace("walk" , "run");
+        console.log(replaceResult);
+
+        let fees = '350,000,000';
+        console.log(fees);
+        fees = fees.replace(/\,/g , '');
+        console.log(Number(fees));
+    </script>
+</body>
+</html>

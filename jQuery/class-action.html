@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="jquery-4.0.0.min.js"></script>
+
+    <style>
+        .trip {
+            max-width: 300px;
+            background-color: greenyellow;
+            color: white;
+            text-align: center;
+            padding: 50px 0;
+        }
+    </style>
+</head>
+<body>
+    <p class="title">I want to go a trip.</p>
+    <button id="add-class">Add Class</button>
+    <button id="remove-class">Remove Class</button>
+    <button id="toggle-class">Toggle Class</button>
+
+    <script>
+        $(document).ready(function(){
+            $('#add-class').click(function(){
+                $('.title').addClass('trip');
+            })
+
+            $('#remove-class').click(function(){
+                $('.title').removeClass('trip');
+            })
+
+            $('#toggle-class').click(function(){
+                $('.title').toggleClass('trip');
+            })
+        })
+    </script>
+</body>
+</html>
