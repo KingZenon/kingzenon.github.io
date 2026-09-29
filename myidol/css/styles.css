@@ -1,0 +1,27 @@
+/* Fonts */
+
+@font-face {
+    font-family: pangram;
+    src: url(../fonts/Pangram.ttf);
+}
+
+* {
+    font-family: pangram;;
+}
+
+/* For nav brand text animation */
+.waviy {
+  position: relative;
+}
+.waviy span {
+  position: relative;
+  display: inline-block;
+  text-transform: uppercase;
+  animation: flip 3s infinite;
+  animation-delay: calc(.3s * var(--i))
+}
+@keyframes flip {
+  0%,80% {
+    transform: rotateY(360deg) 
+  }
+}
