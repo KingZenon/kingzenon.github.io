@@ -60,9 +60,9 @@ body {
     color: white;
 }
 
-h1, h2, h3 {
+/* h1, h2, h3 {
     font-family: 'Playfair Display', serif;
-}
+} */
 
 .nav-link {
     font-family: 'Inter', sans-serif;
@@ -105,4 +105,21 @@ h1, h2, h3 {
 
 .hero-content {
     padding: 24px;
+}
+
+.hero-content h6 {
+    color: #42C2C9;
+}
+
+#explore-button {
+    background-color: #168A94;
+    color: #FFFFFF;
+}
+
+#explore-button:hover {
+    background-color: #20A7B3;
+}
+
+.view-packages-button:hover {
+    background-color: #168A94;
 }
