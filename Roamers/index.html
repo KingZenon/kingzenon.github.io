@@ -16,11 +16,13 @@
       <!-- Script link -->
     <script src="bootstrap/js/bootstrap.bundle.min.js"></script>
     <script src="js/jquery-4.0.0.min.js"></script>
+    <script src="js/index.js"></script>
 </head>
 <body>
-    <nav class="navbar navbar-expand-md bg-deep-ocean">
+    <!-- Navigation Bar -->
+    <nav class="navbar navbar-expand-lg bg-deep-ocean">
         <div class="container">
-            <a class="navbar-brand" href="index.html">Roamers</a>
+            <a class="navbar-brand" href="index.html"><span class="brand-mark">✦</span> roamers<span class="brand-dot">.</span></a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
             </button>
@@ -54,12 +56,13 @@
                     <li class="nav-item">
                         <a class="nav-link" href="#">Contact</a>
                     </li>
-                    
+                    <a class="btn nav-button" href="contact.html">Plan a trip <span aria-hidden="true">↗</span></a>
                 </ul>
             </div>
         </div>
     </nav>
 
+    <!-- Hero  -->
     <div class="container hero-container mt-3">
         <div class="hero">
             <div class="hero-image mt-2">
@@ -70,10 +73,227 @@
                 <h6>DISCOVER THE BEAUTY OF ASIA</h6>
                 <h1>Your Next Journey Starts Here</h1>
                 <p>Extraordinary destinations. Unforgettable experiences.</p>
-                <a href="#" class="btn me-2" id="explore-button">Explore Destinations</a>
-                <a href="" class="btn btn-outline-secondary view-packages-button">View Packages</a>
+                <div class="d-flex flex-column flex-md-row gap-2">
+                    <a href="#" class="btn btn-roamers me-2 explore-button">Explore Destinations <span aria-hidden="true">↗</span></a>
+                    <a href="" class="btn btn-outline-secondary view-packages-button border">View Packages</a>
+                </div>
             </div>
         </div>
     </div>
+
+    <!-- Travel Search Part -->
+    <div class="container mt-3 travel-search">
+        <h3>Where will you go next?</h3>
+
+        <form id="travelSearchForm" class="row g-3">
+
+            <!-- Destination -->
+            <div class="col-12 col-md-4">
+                <select
+                    id="destination"
+                    class="form-select travel-select"
+                    aria-label="Select destination"
+                    required
+                >
+                    <option value="" selected disabled>Destination</option>
+                    <option value="bali">Bali</option>
+                    <option value="thailand">Thailand</option>
+                    <option value="japan">Japan</option>
+                    <option value="vietnam">Vietnam</option>
+                    <option value="maldives">Maldives</option>
+                </select>
+            </div>
+
+            <!-- Travel Style -->
+            <div class="col-12 col-md-4">
+                <select
+                    id="travelStyle"
+                    class="form-select travel-select"
+                    aria-label="Select travel style"
+                    required
+                >
+                    <option value="" selected disabled>Travel Style</option>
+                    <option value="adventure">Adventure</option>
+                    <option value="relaxation">Relaxation</option>
+                    <option value="culture">Culture</option>
+                    <option value="luxury">Luxury</option>
+                </select>
+            </div>
+
+            <!-- Explore Button -->
+            <div class="col-12 col-md-4">
+                <button type="submit" class="btn travel-search-btn w-100">
+                        Explore
+                </button>
+            </div>
+
+        </form>
+    </div>
+
+    <div class="container mt-5">
+
+        <!-- Section Heading -->
+        <div class="d-flex justify-content-between align-items-center mb-4">
+            <h2 class="popular-title mb-0">
+                Popular Destinations
+            </h2>
+
+            <a href="destinations.html" class="view-all">
+                View All &rarr;
+            </a>
+        </div>
+
+        <!-- Destination Cards -->
+        <div class="row g-3">
+
+            <!-- Bali -->
+            <div class="col-12 col-md-4">
+                <a href="destinations.html" class="popular-card">
+                    <div class="popular-image">
+                        <img
+                            src="images/bali.jpg"
+                            alt="Bali, Indonesia"
+                            loading="lazy"
+                        >
+                    </div>
+
+                    <h3>Bali, Indonesia</h3>
+                </a>
+            </div>
+
+            <!-- Kyoto -->
+            <div class="col-12 col-md-4">
+                <a href="destinations.html" class="popular-card">
+                    <div class="popular-image">
+                        <img
+                            src="images/kyoto.jpg"
+                            alt="Kyoto, Japan"
+                            loading="lazy"
+                        >
+                    </div>
+
+                    <h3>Kyoto, Japan</h3>
+                </a>
+            </div>
+
+            <!-- Phuket -->
+            <div class="col-12 col-md-4">
+                <a href="destinations.html" class="popular-card">
+                    <div class="popular-image">
+                        <img
+                            src="images/phuket.jpg"
+                            alt="Phuket, Thailand"
+                            loading="lazy"
+                        >
+                    </div>
+
+                    <h3>Phuket, Thailand</h3>
+                </a>
+            </div>
+
+        </div>
+    </div>
+
+   <div class="container mt-5">
+
+        <!-- Curated Travel Experiences -->
+        <div class="experience-box text-center">
+            <h2>Curated Travel Experiences</h2>
+            <p>Package cards · Duration · Highlights · Inquiry</p>
+        </div>
+
+        <!-- Why Explore With Roamers -->
+        <div class="why-roamers text-center">
+            <h2>Why Explore With Roamers?</h2>
+            <p>Discover · Plan · Experience</p>
+        </div>
+
+        <!-- The World Is Waiting -->
+        <div class="world-box text-center">
+            <h2>The World Is Waiting.</h2>
+            <p>Start exploring your next unforgettable escape.</p>
+        </div>
+
+    </div>
+
+    <footer class="site-footer mt-5">
+        <div class="container">
+
+            <div class="row gy-5">
+
+                <!-- Brand -->
+                <div class="col-12 col-lg-4">
+                    <a href="index.html" class="footer-brand">
+                        <span class="brand-mark">✦</span>
+                        roamers<span class="brand-dot">.</span>
+                    </a>
+
+                    <p class="footer-description">
+                        Discover extraordinary places, create
+                        unforgettable memories, and explore
+                        the world your way.
+                    </p>
+
+                    <div class="footer-social">
+                        <a href="#" aria-label="Instagram">IG</a>
+                        <a href="#" aria-label="Facebook">FB</a>
+                        <a href="#" aria-label="YouTube">YT</a>
+                    </div>
+                </div>
+
+                <!-- Quick Links -->
+                <div class="col-6 col-md-4 col-lg-2">
+                    <h3 class="footer-heading">Quick Links</h3>
+
+                    <ul class="footer-links">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="destinations.html">Destinations</a></li>
+                        <li><a href="packages.html">Packages</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+
+                <!-- Destinations -->
+                <div class="col-6 col-md-4 col-lg-3">
+                    <h3 class="footer-heading">Destinations</h3>
+
+                    <ul class="footer-links">
+                        <li><a href="destinations.html">Bali, Indonesia</a></li>
+                        <li><a href="destinations.html">Kyoto, Japan</a></li>
+                        <li><a href="destinations.html">Phuket, Thailand</a></li>
+                        <li><a href="destinations.html">Explore All</a></li>
+                    </ul>
+                </div>
+
+                <!-- Contact -->
+                <div class="col-12 col-md-4 col-lg-3">
+                    <h3 class="footer-heading">Get In Touch</h3>
+
+                    <p class="footer-contact">
+                        Have questions about your next trip?
+                        We'd love to help you plan.
+                    </p>
+
+                    <a href="contact.html" class="footer-contact-link">
+                        Contact Us &rarr;
+                    </a>
+                </div>
+
+            </div>
+
+            <!-- Bottom Footer -->
+            <div class="footer-bottom">
+                <p class="mb-0">
+                    &copy; 2026 Roamers. All rights reserved.
+                </p>
+
+                <p class="mb-0">
+                    Made for explorers ✦
+                </p>
+            </div>
+
+        </div>
+    </footer>
 </body>
 </html>
