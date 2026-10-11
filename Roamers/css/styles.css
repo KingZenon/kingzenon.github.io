@@ -76,14 +76,14 @@ body {
     border-radius: 12px;
 }
 .navbar .nav-link {
-    color: #F4EBDD; /* Sand Beige */
+    color: #F4EBDD;
     font-weight: 500;
     transition: color 0.3s ease;
 }
 
 /* Hover color */
 .navbar .nav-link:hover {
-    color: #5DD6D6; /* Light Teal */
+    color: #5DD6D6; 
 }
 
 /* Active page color */
@@ -164,14 +164,9 @@ body {
     background-color: #168A94;
 }
 
-/* Travel Search */
-.travel-search {
-    max-width: 1320px;
-
-}
-
 /* Travel Search Section */
 .travel-search {
+    max-width: 1320px;
     background-color: #000;
     padding: 24px 30px;
     border: 1px solid #292929;
@@ -443,13 +438,13 @@ body {
     width: 42px;
     height: 42px;
 
-    background-color: #143a49;
-    border: 1px solid rgba(225, 244, 246, 0.14);
-    border-radius: 50%;
+    /* background-color: #143a49; */
+    /* border: 1px solid rgba(225, 244, 246, 0.14);
+    border-radius: 50%; */
 
-    color: #f6f3ed;
-    font-size: 12px;
-    font-weight: 600;
+    /* color: #f6f3ed; */
+    /* font-size: 12px;
+    font-weight: 600; */
     text-decoration: none;
 
     transition:

@@ -1,3 +1,4 @@
+// Travel Search 
 document.getElementById("travelSearchForm").addEventListener("submit", function (event) {
     event.preventDefault();
 
