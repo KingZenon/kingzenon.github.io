@@ -16,6 +16,7 @@
       <!-- Script link -->
     <script src="bootstrap/js/bootstrap.bundle.min.js"></script>
     <script src="js/jquery-4.0.0.min.js"></script>
+    <script src="https://code.jquery.com/jquery-4.0.0.min.js"></script>
     <script src="js/index.js"></script>
 </head>
 <body>
@@ -36,7 +37,7 @@
                         <span class="nav-link">.</span>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Destinations</a>
+                        <a class="nav-link" href="pages/destination.html">Destinations</a>
                     </li>
                     <li class="nav-item d-none d-lg-block">
                         <span class="nav-link">.</span>
@@ -56,7 +57,7 @@
                     <li class="nav-item">
                         <a class="nav-link" href="#">Contact</a>
                     </li>
-                    <a class="btn nav-button" href="contact.html">Plan a trip <span aria-hidden="true">↗</span></a>
+                    <a class="btn nav-button" href="pages/contact.html">Plan a trip <span aria-hidden="true">↗</span></a>
                 </ul>
             </div>
         </div>
@@ -66,7 +67,7 @@
     <div class="container hero-container mt-3">
         <div class="hero">
             <div class="hero-image mt-2">
-                <img src="images/hero.jpg" alt="" class="hero-image">
+                <img src="images/hero.jpg" alt="hero-image" class="hero-image">
             </div>
 
             <div class="hero-content mt-2">
@@ -74,7 +75,7 @@
                 <h1>Your Next Journey Starts Here</h1>
                 <p>Extraordinary destinations. Unforgettable experiences.</p>
                 <div class="d-flex flex-column flex-md-row gap-2">
-                    <a href="#" class="btn btn-roamers me-2 explore-button">Explore Destinations <span aria-hidden="true">↗</span></a>
+                    <a href="pages/destination.html" class="btn btn-roamers me-2 explore-button">Explore Destinations <span aria-hidden="true">↗</span></a>
                     <a href="" class="btn btn-outline-secondary view-packages-button border">View Packages</a>
                 </div>
             </div>
@@ -83,6 +84,7 @@
 
     <!-- Travel Search Part -->
     <div class="container mt-3 travel-search">
+
         <h3>Where will you go next?</h3>
 
         <form id="travelSearchForm" class="row g-3">
@@ -92,15 +94,16 @@
                 <select
                     id="destination"
                     class="form-select travel-select"
-                    aria-label="Select destination"
                     required
                 >
-                    <option value="" selected disabled>Destination</option>
+                    <option value="" selected disabled>
+                        Destination
+                    </option>
                     <option value="bali">Bali</option>
                     <option value="thailand">Thailand</option>
                     <option value="japan">Japan</option>
                     <option value="vietnam">Vietnam</option>
-                    <option value="maldives">Maldives</option>
+                    <option value="singapore">Singapore</option>
                 </select>
             </div>
 
@@ -109,10 +112,11 @@
                 <select
                     id="travelStyle"
                     class="form-select travel-select"
-                    aria-label="Select travel style"
                     required
                 >
-                    <option value="" selected disabled>Travel Style</option>
+                    <option value="" selected disabled>
+                        Travel Style
+                    </option>
                     <option value="adventure">Adventure</option>
                     <option value="relaxation">Relaxation</option>
                     <option value="culture">Culture</option>
@@ -122,12 +126,16 @@
 
             <!-- Explore Button -->
             <div class="col-12 col-md-4">
-                <button type="submit" class="btn travel-search-btn w-100">
-                        Explore
+                <button
+                    type="submit"
+                    class="btn travel-search-btn w-100"
+                >
+                    Explore
                 </button>
             </div>
 
         </form>
+
     </div>
 
     <!-- Popular Destinatons -->
@@ -139,7 +147,7 @@
                 Popular Destinations
             </h2>
 
-            <a href="destinations.html" class="view-all">
+            <a href="pages/destination.html" class="view-all">
                 View All &rarr;
             </a>
         </div>
@@ -149,7 +157,7 @@
 
             <!-- Bali -->
             <div class="col-12 col-md-4">
-                <a href="destinations.html" class="popular-card">
+                <a href="pages/destination.html" class="popular-card">
                     <div class="popular-image">
                         <img
                             src="images/bali.jpg"
@@ -164,7 +172,7 @@
 
             <!-- Kyoto -->
             <div class="col-12 col-md-4">
-                <a href="destinations.html" class="popular-card">
+                <a href="pages/destination.html" class="popular-card">
                     <div class="popular-image">
                         <img
                             src="images/kyoto.jpg"
@@ -179,7 +187,7 @@
 
             <!-- Phuket -->
             <div class="col-12 col-md-4">
-                <a href="destinations.html" class="popular-card">
+                <a href="pages/destination.html" class="popular-card">
                     <div class="popular-image">
                         <img
                             src="images/phuket.jpg"
@@ -230,10 +238,7 @@
                         roamers<span class="brand-dot">.</span>
                     </a>
 
-                    <p class="footer-description">
-                        Discover extraordinary places, create
-                        unforgettable memories, and explore
-                        the world your way.
+                    <p class="footer-description">Discover extraordinary places, create unforgettable memories, and explore the world your way.
                     </p>
 
                     <div class="footer-social">
@@ -255,10 +260,10 @@
 
                     <ul class="footer-links">
                         <li><a href="index.html">Home</a></li>
-                        <li><a href="destinations.html">Destinations</a></li>
-                        <li><a href="packages.html">Packages</a></li>
-                        <li><a href="about.html">About Us</a></li>
-                        <li><a href="contact.html">Contact</a></li>
+                        <li><a href="pages/destination.html">Destinations</a></li>
+                        <li><a href="pages/packages.html">Packages</a></li>
+                        <li><a href="pages/about.html">About Us</a></li>
+                        <li><a href="pages/contact.html">Contact</a></li>
                     </ul>
                 </div>
 
@@ -267,10 +272,10 @@
                     <h3 class="footer-heading">Destinations</h3>
 
                     <ul class="footer-links">
-                        <li><a href="destinations.html">Bali, Indonesia</a></li>
-                        <li><a href="destinations.html">Kyoto, Japan</a></li>
-                        <li><a href="destinations.html">Phuket, Thailand</a></li>
-                        <li><a href="destinations.html">Explore All</a></li>
+                        <li><a href="pages/destination.html">Bali, Indonesia</a></li>
+                        <li><a href="pages/destination.html">Kyoto, Japan</a></li>
+                        <li><a href="pages/destination.html">Phuket, Thailand</a></li>
+                        <li><a href="pages/destination.html">Explore All</a></li>
                     </ul>
                 </div>
 
@@ -278,27 +283,18 @@
                 <div class="col-12 col-md-4 col-lg-3">
                     <h3 class="footer-heading">Get In Touch</h3>
 
-                    <p class="footer-contact">
-                        Have questions about your next trip?
-                        We'd love to help you plan.
-                    </p>
+                    <p class="footer-contact">Have questions about your next trip? We'd love to help you plan.</p>
 
-                    <a href="contact.html" class="footer-contact-link">
-                        Contact Us &rarr;
-                    </a>
+                    <a href="contact.html" class="footer-contact-link">Contact Us &rarr;</a>
                 </div>
 
             </div>
 
             <!-- Bottom Footer -->
             <div class="footer-bottom">
-                <p class="mb-0">
-                    &copy; 2026 Roamers. All rights reserved.
-                </p>
+                <p class="mb-0">&copy; 2026 Roamers. All rights reserved.</p>
 
-                <p class="mb-0">
-                    Made for explorers ✦
-                </p>
+                <p class="mb-0">Made for explorers ✦</p>
             </div>
 
         </div>
