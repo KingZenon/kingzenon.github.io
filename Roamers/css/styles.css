@@ -452,6 +452,13 @@ body {
         transform 0.3s ease;
 }
 
+.footer-social img {
+    width: 22px;
+    height: 22px;
+    object-fit: contain;
+    display: block;
+}
+
 .footer-social a:hover {
     background-color: #168a94;
     color: white;
