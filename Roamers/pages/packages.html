@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Roamers</title>
+    <!-- Bootstrap link -->
+    <link rel="stylesheet" href="../bootstrap/css/bootstrap.min.css">
+    <!-- Custom Css -->
+    <link rel="stylesheet" href="../css/styles.css">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Playfair+Display:wght@400;500;600;700&display=swap"
+      rel="stylesheet">
+      <!-- Script link -->
+    <script src="../bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="../js/jquery-4.0.0.min.js"></script>
+    <script src="https://code.jquery.com/jquery-4.0.0.min.js"></script>
+    <script src="../js/index.js"></script>
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar navbar-expand-lg bg-deep-ocean">
+        <div class="container">
+            <a class="navbar-brand" href="../index.html"><span class="brand-mark">✦</span> roamers<span class="brand-dot">.</span></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="../index.html">Home</a>
+                    </li>
+                    <li class="nav-item d-none d-lg-block">
+                        <span class="nav-link">.</span>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="destination.html">Destinations</a>
+                    </li>
+                    <li class="nav-item d-none d-lg-block">
+                        <span class="nav-link">.</span>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="packages.html">Packages</a>
+                    </li>
+                    <li class="nav-item d-none d-lg-block">
+                        <span class="nav-link">.</span>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">About</a>
+                    </li>
+                    <li class="nav-item d-none d-lg-block">
+                        <span class="nav-link">.</span>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contact</a>
+                    </li>
+                    <a class="btn nav-button" href="contact.html">Plan a trip <span aria-hidden="true">↗</span></a>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    
+<!-- Packages Section -->
+<div class="container my-4 packages-section">
+
+    <!-- Header -->
+    <div class="packages-banner text-center">
+        <span class="packages-label">CURATED EXPERIENCES</span>
+        <h1>Journeys Worth Taking</h1>
+        <p>Discover sample itineraries tailored to different travel styles.</p>
+    </div>
+
+    <!-- Filter Buttons -->
+    <div class="package-filters d-flex flex-wrap gap-2 my-3">
+        <button class="package-filter-btn active"
+                data-filter="all" type="button">
+            All Packages
+        </button>
+
+        <button class="package-filter-btn"
+                data-filter="beach" type="button">
+            Beach Escapes
+        </button>
+
+        <button class="package-filter-btn"
+                data-filter="culture" type="button">
+            Culture
+        </button>
+
+        <button class="package-filter-btn"
+                data-filter="nature" type="button">
+            Nature
+        </button>
+    </div>
+
+    <!-- Package Cards -->
+    <div class="row g-3" id="packageGrid">
+
+        <!-- Bali -->
+        <div class="col-12 col-md-6 col-lg-4 package-item"
+             data-category="beach culture">
+
+            <div class="package-card">
+                <img src="../images/bali_destination.jpg"
+                     alt="Bali Island Escape"
+                     class="package-image">
+
+                <div class="package-content">
+                    <h3>Bali Island Escape</h3>
+                    <p>5 Days · Beach & Culture</p>
+                    <p>Sample itinerary and highlights.</p>
+                    <a href="contact.html?package=bali"
+                       class="btn package-inquiry-btn">
+                        Inquire Now
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Kyoto -->
+        <div class="col-12 col-md-6 col-lg-4 package-item"
+             data-category="culture">
+
+            <div class="package-card">
+                <img src="../images/kyoto_destination.jpg"
+                     alt="Kyoto Cultural Journey"
+                     class="package-image">
+
+                <div class="package-content">
+                    <h3>Kyoto Cultural Journey</h3>
+                    <p>4 Days · Culture & Heritage</p>
+                    <p>Sample itinerary and highlights.</p>
+                    <a href="contact.html?package=kyoto"
+                       class="btn package-inquiry-btn">
+                        Inquire Now
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Ha Long Bay -->
+        <div class="col-12 col-md-6 col-lg-4 package-item"
+             data-category="nature">
+
+            <div class="package-card">
+                <img src="../images/holongbay_destination.jpg"
+                     alt="Ha Long Bay Retreat"
+                     class="package-image">
+
+                <div class="package-content">
+                    <h3>Ha Long Bay Retreat</h3>
+                    <p>3 Days · Nature & Cruise</p>
+                    <p>Sample itinerary and highlights.</p>
+                    <a href="contact.html?package=halongbay"
+                       class="btn package-inquiry-btn">
+                        Inquire Now
+                    </a>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+
+<!-- Frequently Asked Questions -->
+<div class="container my-5 faq-section">
+
+    <div class="text-center mb-4">
+        <h2 class="faq-title">Frequently Asked Questions</h2>
+        <p class="faq-subtitle">
+            Everything you need to know before your next adventure.
+        </p>
+    </div>
+
+    <div class="accordion" id="packagesFAQ">
+
+        <!-- Question 1 -->
+        <div class="accordion-item">
+            <h3 class="accordion-header">
+                <button class="accordion-button" type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#faqOne"
+                    aria-expanded="true"
+                    aria-controls="faqOne">
+                    Can I customize my travel package?
+                </button>
+            </h3>
+            <div id="faqOne"
+                 class="accordion-collapse collapse show"
+                 data-bs-parent="#packagesFAQ">
+                <div class="accordion-body">
+                    Yes! You can request changes to destinations,
+                    activities, accommodation, and trip duration.
+                    Send us your preferences through our inquiry form.
+                </div>
+            </div>
+        </div>
+
+        <!-- Question 2 -->
+        <div class="accordion-item">
+            <h3 class="accordion-header">
+                <button class="accordion-button collapsed" type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#faqTwo"
+                    aria-expanded="false"
+                    aria-controls="faqTwo">
+                    Are flights included in the package price?
+                </button>
+            </h3>
+            <div id="faqTwo"
+                 class="accordion-collapse collapse"
+                 data-bs-parent="#packagesFAQ">
+                <div class="accordion-body">
+                    Package inclusions depend on the itinerary.
+                    Please contact us to request a detailed
+                    quotation, including flights and accommodation.
+                </div>
+            </div>
+        </div>
+
+        <!-- Question 3 -->
+        <div class="accordion-item">
+            <h3 class="accordion-header">
+                <button class="accordion-button collapsed" type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#faqThree"
+                    aria-expanded="false"
+                    aria-controls="faqThree">
+                    How can I book a travel package?
+                </button>
+            </h3>
+            <div id="faqThree"
+                 class="accordion-collapse collapse"
+                 data-bs-parent="#packagesFAQ">
+                <div class="accordion-body">
+                    Click the "Inquire Now" button on your preferred
+                    package and complete the contact form.
+                    Our team can then discuss your travel plans.
+                </div>
+            </div>
+        </div>
+
+        <!-- Question 4 -->
+        <div class="accordion-item">
+            <h3 class="accordion-header">
+                <button class="accordion-button collapsed" type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#faqFour"
+                    aria-expanded="false"
+                    aria-controls="faqFour">
+                    Can I travel with a group or family?
+                </button>
+            </h3>
+            <div id="faqFour"
+                 class="accordion-collapse collapse"
+                 data-bs-parent="#packagesFAQ">
+                <div class="accordion-body">
+                    You can request an itinerary for solo travel,
+                    couples, families, or groups. Include the number
+                    of travelers when submitting your inquiry.
+                </div>
+            </div>
+        </div>
+
+        <!-- Question 5 -->
+        <div class="accordion-item">
+            <h3 class="accordion-header">
+                <button class="accordion-button collapsed" type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#faqFive"
+                    aria-expanded="false"
+                    aria-controls="faqFive">
+                    What happens if I need to cancel my trip?
+                </button>
+            </h3>
+            <div id="faqFive"
+                 class="accordion-collapse collapse"
+                 data-bs-parent="#packagesFAQ">
+                <div class="accordion-body">
+                    Cancellation terms depend on the selected
+                    travel arrangements. Please confirm the
+                    applicable cancellation and refund conditions
+                    before making a booking.
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+</div>
+
+<!-- Footer -->
+    <footer class="site-footer mt-5">
+        <div class="container">
+
+            <div class="row gy-5">
+
+                <!-- Brand -->
+                <div class="col-12 col-lg-4">
+                    <a href="index.html" class="footer-brand">
+                        <span class="brand-mark">✦</span>
+                        roamers<span class="brand-dot">.</span>
+                    </a>
+
+                    <p class="footer-description">Discover extraordinary places, create unforgettable memories, and explore the world your way.
+                    </p>
+
+                    <div class="footer-social">
+                        <a href="#" aria-label="Instagram">
+                            <img src="../images/instagram.svg" alt="">
+                        </a>
+                        <a href="#" aria-label="Facebook">
+                            <img src="../images/facebook.svg" alt="">
+                        </a>
+                        <a href="#" aria-label="YouTube">
+                            <img src="../images/youtube.svg" alt="">
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Quick Links -->
+                <div class="col-6 col-md-4 col-lg-2">
+                    <h3 class="footer-heading">Quick Links</h3>
+
+                    <ul class="footer-links">
+                        <li><a href="../index.html">Home</a></li>
+                        <li><a href="destination.html">Destinations</a></li>
+                        <li><a href="packages.html">Packages</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+
+                <!-- Destinations -->
+                <div class="col-6 col-md-4 col-lg-3">
+                    <h3 class="footer-heading">Destinations</h3>
+
+                    <ul class="footer-links">
+                        <li><a href="destination.html">Bali, Indonesia</a></li>
+                        <li><a href="destination.html">Kyoto, Japan</a></li>
+                        <li><a href="destination.html">Phuket, Thailand</a></li>
+                        <li><a href="destination.html">Explore All</a></li>
+                    </ul>
+                </div>
+
+                <!-- Contact -->
+                <div class="col-12 col-md-4 col-lg-3">
+                    <h3 class="footer-heading">Get In Touch</h3>
+
+                    <p class="footer-contact">Have questions about your next trip? We'd love to help you plan.
+                    </p>
+
+                    <a href="contact.html" class="footer-contact-link">Contact Us &rarr;</a>
+                </div>
+
+            </div>
+
+            <!-- Bottom Footer -->
+            <div class="footer-bottom">
+                <p class="mb-0">&copy; 2026 Roamers. All rights reserved.</p>
+
+                <p class="mb-0">Made for explorers ✦</p>
+            </div>
+
+        </div>
+    </footer>
+</body>
+</html>

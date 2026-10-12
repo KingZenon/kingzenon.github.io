@@ -2,6 +2,7 @@
 $(function () {
 
     // HOME PAGE - TRAVEL SEARCH
+
     $("#travelSearchForm").on("submit", function (event) {
         event.preventDefault();
 
@@ -15,8 +16,8 @@ $(function () {
             encodeURIComponent(style);
     });
 
+    // DESTINATION PAGE - SEARCH
 
-    // DESTINATION PAGE - HOMEPAGE SEARCH RESULTS
     let params = new URLSearchParams(window.location.search);
 
     let destination = params.get("destination");
@@ -38,8 +39,8 @@ $(function () {
 
     }
 
+    // DESTINATION CATEGORY FILTER
 
-    // DESTINATION PAGE - CATEGORY BUTTONS
     $(".filter-btn").on("click", function () {
 
         let category = $(this).attr("data-filter");
@@ -58,6 +59,55 @@ $(function () {
 
         });
 
+    });
+
+    // PACKAGES PAGE FILTER
+
+    $(".package-filter-btn").on("click", function () {
+
+        let filter = $(this).attr("data-filter");
+
+        // Update active button
+        $(".package-filter-btn").removeClass("active");
+        $(this).addClass("active");
+
+        // Filter package cards
+        $(".package-item").each(function () {
+
+            let categories = $(this).attr("data-category") || "";
+
+            $(this).toggle(
+                filter === "all" ||
+                categories.split(" ").includes(filter)
+            );
+
+        });
+
+    });
+
+
+    // CONTACT PAGE
+
+    // Read package from URL
+    let contactParams = new URLSearchParams(window.location.search);
+    let selectedPackage = contactParams.get("package");
+
+    if (selectedPackage) {
+        $("#interestedPackage").val(selectedPackage);
+    }
+
+    // Handle form submission
+    $("#tripInquiryForm").on("submit", function (event) {
+        event.preventDefault();
+
+        if (!this.checkValidity()) {
+            this.reportValidity();
+            return;
+        }
+
+        $("#inquiryStatus")
+            .text("Your inquiry is ready! Thank you for your interest in Roamers.")
+            .css("color", "#20a7b3");
     });
 
 });
